@@ -11,3 +11,11 @@ export type Item = {
     length: number;
   };
 };
+
+export type Filters = {
+  categories: string[]; // multi-select
+  status: string | ""; // single status
+  startDate: string | ""; // ISO string
+  endDate: string | ""; // ISO string
+  search: string; // free text search
+};
